@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A90E399E22BC76DB0016DFE8 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E399D22BC76DB0016DFE8 /* TimeInterval.swift */; };
 		A90E39A122BC773A0016DFE8 /* NightscoutUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E39A022BC773A0016DFE8 /* NightscoutUploader.swift */; };
-		A90E39A322BC782C0016DFE8 /* StoredCarbEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E39A222BC782C0016DFE8 /* StoredCarbEntry.swift */; };
+		A90E39A322BC782C0016DFE8 /* SyncCarbObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E39A222BC782C0016DFE8 /* SyncCarbObject.swift */; };
 		A90E39A522BC791E0016DFE8 /* DoseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E39A422BC791E0016DFE8 /* DoseEntry.swift */; };
 		A90E39A722BC7A360016DFE8 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E39A622BC7A360016DFE8 /* HKUnit.swift */; };
 		A90E39A922BC7AD10016DFE8 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E39A822BC7AD10016DFE8 /* Bundle.swift */; };
@@ -51,6 +51,9 @@
 		F514D34A24EFD027006E2C17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F514D34824EFD027006E2C17 /* InfoPlist.strings */; };
 		F514D34D24EFD027006E2C17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F514D34B24EFD027006E2C17 /* InfoPlist.strings */; };
 		F514D35024EFD027006E2C17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F514D34E24EFD027006E2C17 /* InfoPlist.strings */; };
+		C1E703642506BE9400DAB534 /* ObjectIdCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E703632506BE9400DAB534 /* ObjectIdCache.swift */; };
+		C1E7036625070A0E00DAB534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E7036525070A0E00DAB534 /* Assets.xcassets */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +97,7 @@
 /* Begin PBXFileReference section */
 		A90E399D22BC76DB0016DFE8 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		A90E39A022BC773A0016DFE8 /* NightscoutUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightscoutUploader.swift; sourceTree = "<group>"; };
-		A90E39A222BC782C0016DFE8 /* StoredCarbEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredCarbEntry.swift; sourceTree = "<group>"; };
+		A90E39A222BC782C0016DFE8 /* SyncCarbObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncCarbObject.swift; sourceTree = "<group>"; };
 		A90E39A422BC791E0016DFE8 /* DoseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseEntry.swift; sourceTree = "<group>"; };
 		A90E39A622BC7A360016DFE8 /* HKUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUnit.swift; sourceTree = "<group>"; };
 		A90E39A822BC7AD10016DFE8 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
@@ -210,6 +213,9 @@
 		F5FDA59424F3D564002CCA6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5FDA59524F3D564002CCA6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5FDA59624F3D564002CCA6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1E703632506BE9400DAB534 /* ObjectIdCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectIdCache.swift; sourceTree = "<group>"; };
+		C1E7036525070A0E00DAB534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,10 +278,10 @@
 				A90E39A422BC791E0016DFE8 /* DoseEntry.swift */,
 				A90E39A622BC7A360016DFE8 /* HKUnit.swift */,
 				A90E39A022BC773A0016DFE8 /* NightscoutUploader.swift */,
-				A90E39A222BC782C0016DFE8 /* StoredCarbEntry.swift */,
 				A934B6152358F42A00949C8B /* StoredDosingDecision.swift */,
 				A94DA7632353CF930082E26D /* StoredGlucoseSample.swift */,
 				A934B6172358F49300949C8B /* StoredSettings.swift */,
+				A90E39A222BC782C0016DFE8 /* SyncCarbObject.swift */,
 				A934B6192358F5FC00949C8B /* TemporaryScheduleOverride.swift */,
 				A90E399D22BC76DB0016DFE8 /* TimeInterval.swift */,
 			);
@@ -318,6 +324,7 @@
 				A993990222BC7095005E39D3 /* NightscoutService.swift */,
 				A90E399F22BC77220016DFE8 /* Extensions */,
 				A9B007BB22BD7120000131DE /* Localizable.strings */,
+				C1E703632506BE9400DAB534 /* ObjectIdCache.swift */,
 			);
 			path = NightscoutServiceKit;
 			sourceTree = "<group>";
@@ -342,6 +349,7 @@
 				A993990622BC70C9005E39D3 /* NightscoutServiceTableViewController.swift */,
 				A9E4153922BC8A2C00168E14 /* Extensions */,
 				A9B007BE22BD7130000131DE /* Localizable.strings */,
+				C1E7036525070A0E00DAB534 /* Assets.xcassets */,
 			);
 			path = NightscoutServiceKitUI;
 			sourceTree = "<group>";
@@ -611,6 +619,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E7036625070A0E00DAB534 /* Assets.xcassets in Resources */,
 				A9B007C022BD7130000131DE /* Localizable.strings in Resources */,
 				F514D35024EFD027006E2C17 /* InfoPlist.strings in Resources */,
 			);
@@ -712,10 +721,11 @@
 				A993990322BC7095005E39D3 /* NightscoutService.swift in Sources */,
 				A934B6162358F42A00949C8B /* StoredDosingDecision.swift in Sources */,
 				A90E39A922BC7AD10016DFE8 /* Bundle.swift in Sources */,
-				A90E39A322BC782C0016DFE8 /* StoredCarbEntry.swift in Sources */,
+				A90E39A322BC782C0016DFE8 /* SyncCarbObject.swift in Sources */,
 				A934B61A2358F5FC00949C8B /* TemporaryScheduleOverride.swift in Sources */,
 				A915719E23329845005429E1 /* DiagnosticLog+Subsystem.swift in Sources */,
 				A94DA7642353CF930082E26D /* StoredGlucoseSample.swift in Sources */,
+				C1E703642506BE9400DAB534 /* ObjectIdCache.swift in Sources */,
 				A90E39A722BC7A360016DFE8 /* HKUnit.swift in Sources */,
 				A90E399E22BC76DB0016DFE8 /* TimeInterval.swift in Sources */,
 				A90E39A122BC773A0016DFE8 /* NightscoutUploader.swift in Sources */,

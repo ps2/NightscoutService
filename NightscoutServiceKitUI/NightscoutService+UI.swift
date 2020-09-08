@@ -6,17 +6,22 @@
 //  Copyright © 2019 LoopKit Authors. All rights reserved.
 //
 
+import SwiftUI
 import LoopKit
 import LoopKitUI
 import NightscoutServiceKit
 
 extension NightscoutService: ServiceUI {
+    
+    public static var image: UIImage? {
+        UIImage(named: "nightscout", in: Bundle(for: NightscoutServiceTableViewController.self), compatibleWith: nil)!
+    }
 
     public static func setupViewController() -> (UIViewController & ServiceSetupNotifying & CompletionNotifying)? {
         return ServiceViewController(rootViewController: NightscoutServiceTableViewController(service: NightscoutService(), for: .create))
     }
 
-    public func settingsViewController() -> (UIViewController & ServiceSettingsNotifying & CompletionNotifying) {
+    public func settingsViewController(chartColors: ChartColorPalette, carbTintColor: Color, glucoseTintColor: Color, guidanceColors: GuidanceColors, insulinTintColor: Color) -> (UIViewController & ServiceSettingsNotifying & CompletionNotifying) {
       return ServiceViewController(rootViewController: NightscoutServiceTableViewController(service: self, for: .update))
     }
 
