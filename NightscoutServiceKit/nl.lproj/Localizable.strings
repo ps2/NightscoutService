@@ -2,8 +2,8 @@
 "Nightscout" = "Nightscout";
 
 /* Name uploaded to Nightscout for Pre-Meal override */
-"Pre-Meal" = "Pre-Meal";
+"Pre-Meal" = "Voor de maaltijd";
 
 /* Name uploaded to Nightscout for legacy workout override */
-"Workout" = "Workout";
+"Workout" = "Training";
 
