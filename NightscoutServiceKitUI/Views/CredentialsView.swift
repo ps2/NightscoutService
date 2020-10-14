@@ -21,7 +21,7 @@ struct CredentialsView: View, HorizontalSizeClassOverride {
     
     var body: some View {
         VStack {
-            Text("Nightscout Login")
+            Text(LocalizedString("Nightscout Login",comment: "Nightscout login view"))
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             Image(frameworkImage: "nightscout", decorative: true)
@@ -48,7 +48,7 @@ struct CredentialsView: View, HorizontalSizeClassOverride {
                 if self.viewModel.isVerifying {
                     ActivityIndicator(isAnimating: .constant(true), style: .medium)
                 } else {
-                    Text("Login")
+                    Text(LocalizedString("Login",comment: "Login button"))
                 }
             }
             .buttonStyle(ActionButtonStyle(.primary))
@@ -56,7 +56,7 @@ struct CredentialsView: View, HorizontalSizeClassOverride {
             
             if allowCancel {
                 Button(action: { self.viewModel.didCancel?() } ) {
-                    Text("Cancel").padding(.top, 20)
+                    Text(LocalizedString("Cancel",comment: "Cancel")).padding(.top, 20)
                 }
             }
         }

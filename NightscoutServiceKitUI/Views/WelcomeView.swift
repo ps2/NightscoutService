@@ -16,11 +16,11 @@ struct WelcomeView: View, HorizontalSizeClassOverride {
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Spacer()
-            Text("Welcome to Loop")
+            Text(LocalizedString("Welcome to Loop",comment: "Welcome to Loop"))
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             Image(frameworkImage: "Loop", decorative: true)
-            Text("Before using Loop you need to configure a few settings. These settings should be entered with precision and care; they are ultimately what Loop uses to determine how much insulin to deliver. If you are new to Loop, work with your diabetes support team to come up with a plan for finding out what settings will work best for you.")
+            Text(LocalizedString("Before using Loop you need to configure a few settings. These settings should be entered with precision and care; they are ultimately what Loop uses to determine how much insulin to deliver. If you are new to Loop, work with your diabetes support team to come up with a plan for finding out what settings will work best for you.", comment: "Welcome text for onboarding.") )
                 .foregroundColor(.secondary)
             Spacer()
             Button(action: {
